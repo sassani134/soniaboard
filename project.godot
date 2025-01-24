@@ -24,6 +24,7 @@ AudioManager="*res://Scripts/audio_manager.gd"
 window/size/viewport_width=430
 window/size/viewport_height=932
 window/stretch/aspect="expand"
+window/handheld/orientation=1
 
 [editor_plugins]
 
