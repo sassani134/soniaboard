@@ -1,10 +1,11 @@
 extends Control
 
 @export_dir var sound_dir
+@export_dir var pics_dir
 
 func _ready() -> void:
 	get_viewport().size = DisplayServer.screen_get_size()
-
+	load_all_sounds()
 
 func _process(delta: float) -> void:
 	pass
@@ -25,7 +26,7 @@ func load_all_sounds():
 func add_button(file_name):
 	# Add a button that plays an assigned audio file
 	var b = Button.new()
-	$CenterContainer/GridContainer.add_child(b)
+	%GridContainer.add_child(b)
 	b.add_theme_font_override("font", load("res://assets/Poppins-Medium.ttf"))
 	b.text = file_name
 	b.pressed.connect(on_audio_button_pressed.bind(b))
@@ -33,4 +34,4 @@ func add_button(file_name):
 func on_audio_button_pressed(button):
 	# Play the button's assigned sound
 	var path = sound_dir + "/" + button.text
-	#AudioManager.play(path)
+	AudioManager.play(path)
