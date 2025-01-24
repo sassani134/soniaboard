@@ -12,6 +12,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_5mxe3")
+sound_dir = "res://Assets/Sounds"
 
 [node name="RichTextLabel" type="Label" parent="."]
 layout_mode = 1
