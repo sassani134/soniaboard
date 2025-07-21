@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://djhwyrppyblsd"
-path="res://.godot/imported/JUMBOTRON.otf-265360c4fc9c249e599dd22dc3e35991.fontdata"
+path="res://.godot/imported/JUMBOTRON.otf-3edbaa52e7e4b979d823f87dc3b17a15.fontdata"
 
 [deps]
 
-source_file="res://Assets/polices/JUMBOTRON.otf"
-dest_files=["res://.godot/imported/JUMBOTRON.otf-265360c4fc9c249e599dd22dc3e35991.fontdata"]
+source_file="res://Assets/Fonts/JUMBOTRON.otf"
+dest_files=["res://.godot/imported/JUMBOTRON.otf-3edbaa52e7e4b979d823f87dc3b17a15.fontdata"]
 
 [params]
 
