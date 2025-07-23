@@ -1,6 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://5ixrxuof7wvb"]
+[gd_scene load_steps=22 format=3 uid="uid://5ixrxuof7wvb"]
 
 [ext_resource type="Script" uid="uid://cgk8tehqqcjbh" path="res://Scripts/home.gd" id="1_5mxe3"]
+[ext_resource type="PackedScene" uid="uid://bcrbee3kth2ts" path="res://Scenes/button_play.tscn" id="2_dt112"]
+[ext_resource type="AudioStream" uid="uid://bebar2mn3hnug" path="res://Assets/Sound/dogLaugMeme.mp3" id="3_ibywg"]
+[ext_resource type="Texture2D" uid="uid://dohnsfiwcmiv" path="res://Assets/Pics/chargedLaughNigga.png" id="4_llnbm"]
+[ext_resource type="AudioStream" uid="uid://f78yttcb1ptv" path="res://Assets/Sound/chargedLaughNigga.mp3" id="5_fhpuh"]
+[ext_resource type="Texture2D" uid="uid://cs045a6gjs6bo" path="res://Assets/Pics/ArabIdolMeme.png" id="6_vkfas"]
+[ext_resource type="AudioStream" uid="uid://dglohbgpqojbp" path="res://Assets/Sound/ArabIdolMeme.mp3" id="7_q1yq7"]
+[ext_resource type="Texture2D" uid="uid://djdusuk1j477b" path="res://Assets/Pics/EwMeme.png" id="8_jjai4"]
+[ext_resource type="AudioStream" uid="uid://b24rtptj6ekab" path="res://Assets/Sound/EwMeme.mp3" id="9_t7s13"]
+[ext_resource type="Texture2D" uid="uid://c6aqw2hvr70hp" path="res://Assets/Pics/joeRoganAstonish.png" id="10_lddgv"]
+[ext_resource type="AudioStream" uid="uid://dy71nt7e8ns1l" path="res://Assets/Sound/joeRoganAstonish.mp3" id="11_smgrs"]
+[ext_resource type="Texture2D" uid="uid://ciqfky2lxes46" path="res://Assets/Pics/J_Jonah_JamesonMeme.png" id="12_dyher"]
+[ext_resource type="AudioStream" uid="uid://bn6cmnsra24gd" path="res://Assets/Sound/J_Jonah_JamesonMeme.mp3" id="13_ppvi3"]
+[ext_resource type="Texture2D" uid="uid://70xeaaluquda" path="res://Assets/Pics/ThrillerEndLaugh.png" id="14_7wmtr"]
+[ext_resource type="AudioStream" uid="uid://by47re81v8j45" path="res://Assets/Sound/ThrillerEndLaugh.mp3" id="15_y6p71"]
+[ext_resource type="Texture2D" uid="uid://cnaxb66e2xrfv" path="res://Assets/Pics/The GrandTourLaugh.png" id="16_ayluw"]
+[ext_resource type="AudioStream" uid="uid://c64gv1tbsuqyr" path="res://Assets/Sound/The GrandTourLaugh.mp3" id="17_guf2q"]
+[ext_resource type="Texture2D" uid="uid://deybuy4tbpnrq" path="res://Assets/Pics/WhyareyouGay.png" id="18_0qnmp"]
+[ext_resource type="AudioStream" uid="uid://b8eac01vrex1w" path="res://Assets/Sound/WhyareyouGay.mp3" id="19_h6vkq"]
+[ext_resource type="Texture2D" uid="uid://bmcbsbptyasoa" path="res://Assets/Pics/WomenTeamFortress.png" id="20_3crrv"]
+[ext_resource type="AudioStream" uid="uid://dbcajow4whlrb" path="res://Assets/Sound/WomenTeamFortress.mp3" id="21_wflhj"]
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -9,10 +29,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_5mxe3")
 sound_dir = "res://Assets/Sounds"
+metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="Label" parent="."]
 layout_mode = 1
@@ -23,9 +43,9 @@ grow_horizontal = 2
 text = "Sonia Board"
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
-clip_contents = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,9 +53,67 @@ anchor_bottom = 1.0
 offset_top = 41.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+metadata/_edit_use_anchors_ = true
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
-unique_name_in_owner = true
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer"]
+clip_contents = false
 layout_mode = 2
-size_flags_horizontal = 4
-columns = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[node name="ButtonPlay" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+audioStream = ExtResource("3_ibywg")
+
+[node name="ButtonPlay2" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("4_llnbm")
+audioStream = ExtResource("5_fhpuh")
+
+[node name="ButtonPlay3" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("6_vkfas")
+audioStream = ExtResource("7_q1yq7")
+
+[node name="ButtonPlay4" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("8_jjai4")
+audioStream = ExtResource("9_t7s13")
+
+[node name="ButtonPlay5" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("10_lddgv")
+audioStream = ExtResource("11_smgrs")
+
+[node name="ButtonPlay6" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("12_dyher")
+audioStream = ExtResource("13_ppvi3")
+
+[node name="ButtonPlay7" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("14_7wmtr")
+audioStream = ExtResource("15_y6p71")
+
+[node name="ButtonPlay8" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("16_ayluw")
+audioStream = ExtResource("17_guf2q")
+
+[node name="ButtonPlay9" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("18_0qnmp")
+audioStream = ExtResource("19_h6vkq")
+
+[node name="ButtonPlay10" parent="MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("2_dt112")]
+layout_mode = 2
+icon = ExtResource("20_3crrv")
+audioStream = ExtResource("21_wflhj")

@@ -1,0 +1,113 @@
+[gd_scene load_steps=21 format=3 uid="uid://do33y6cmb1ipk"]
+
+[ext_resource type="PackedScene" uid="uid://bcrbee3kth2ts" path="res://Scenes/button_play.tscn" id="1_up1uv"]
+[ext_resource type="AudioStream" uid="uid://bebar2mn3hnug" path="res://Assets/Sound/dogLaugMeme.mp3" id="2_o7lnp"]
+[ext_resource type="Texture2D" uid="uid://cs045a6gjs6bo" path="res://Assets/Pics/ArabIdolMeme.png" id="3_wt7f3"]
+[ext_resource type="AudioStream" uid="uid://dglohbgpqojbp" path="res://Assets/Sound/ArabIdolMeme.mp3" id="4_mgoge"]
+[ext_resource type="Texture2D" uid="uid://dohnsfiwcmiv" path="res://Assets/Pics/chargedLaughNigga.png" id="5_561im"]
+[ext_resource type="AudioStream" uid="uid://f78yttcb1ptv" path="res://Assets/Sound/chargedLaughNigga.mp3" id="6_i8mtw"]
+[ext_resource type="Texture2D" uid="uid://djdusuk1j477b" path="res://Assets/Pics/EwMeme.png" id="7_a5p0e"]
+[ext_resource type="AudioStream" uid="uid://b24rtptj6ekab" path="res://Assets/Sound/EwMeme.mp3" id="8_sgixo"]
+[ext_resource type="Texture2D" uid="uid://c6aqw2hvr70hp" path="res://Assets/Pics/joeRoganAstonish.png" id="9_ufdpf"]
+[ext_resource type="AudioStream" uid="uid://dy71nt7e8ns1l" path="res://Assets/Sound/joeRoganAstonish.mp3" id="10_on5he"]
+[ext_resource type="Texture2D" uid="uid://ciqfky2lxes46" path="res://Assets/Pics/J_Jonah_JamesonMeme.png" id="11_kwddr"]
+[ext_resource type="AudioStream" uid="uid://bn6cmnsra24gd" path="res://Assets/Sound/J_Jonah_JamesonMeme.mp3" id="12_a0pd4"]
+[ext_resource type="Texture2D" uid="uid://cnaxb66e2xrfv" path="res://Assets/Pics/The GrandTourLaugh.png" id="13_636wx"]
+[ext_resource type="AudioStream" uid="uid://c64gv1tbsuqyr" path="res://Assets/Sound/The GrandTourLaugh.mp3" id="14_x8w7f"]
+[ext_resource type="Texture2D" uid="uid://70xeaaluquda" path="res://Assets/Pics/ThrillerEndLaugh.png" id="15_dtc8a"]
+[ext_resource type="AudioStream" uid="uid://by47re81v8j45" path="res://Assets/Sound/ThrillerEndLaugh.mp3" id="16_pfjyp"]
+[ext_resource type="Texture2D" uid="uid://deybuy4tbpnrq" path="res://Assets/Pics/WhyareyouGay.png" id="17_w235q"]
+[ext_resource type="AudioStream" uid="uid://b8eac01vrex1w" path="res://Assets/Sound/WhyareyouGay.mp3" id="18_rapuo"]
+[ext_resource type="Texture2D" uid="uid://bmcbsbptyasoa" path="res://Assets/Pics/WomenTeamFortress.png" id="19_34b53"]
+[ext_resource type="AudioStream" uid="uid://dbcajow4whlrb" path="res://Assets/Sound/WomenTeamFortress.mp3" id="20_epr0a"]
+
+[node name="home2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+text = "Sonia Board"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ButtonPlay" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+audioStream = ExtResource("2_o7lnp")
+
+[node name="ButtonPlay2" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("3_wt7f3")
+audioStream = ExtResource("4_mgoge")
+
+[node name="ButtonPlay3" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("5_561im")
+audioStream = ExtResource("6_i8mtw")
+
+[node name="ButtonPlay4" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("7_a5p0e")
+audioStream = ExtResource("8_sgixo")
+
+[node name="ButtonPlay5" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("9_ufdpf")
+audioStream = ExtResource("10_on5he")
+
+[node name="ButtonPlay6" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("11_kwddr")
+audioStream = ExtResource("12_a0pd4")
+
+[node name="ButtonPlay7" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("13_636wx")
+audioStream = ExtResource("14_x8w7f")
+
+[node name="ButtonPlay8" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("15_dtc8a")
+audioStream = ExtResource("16_pfjyp")
+
+[node name="ButtonPlay9" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("17_w235q")
+audioStream = ExtResource("18_rapuo")
+
+[node name="ButtonPlay10" parent="VBoxContainer/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_up1uv")]
+layout_mode = 2
+icon = ExtResource("19_34b53")
+audioStream = ExtResource("20_epr0a")

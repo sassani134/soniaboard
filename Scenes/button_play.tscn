@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcrbee3kth2ts"]
+
+[ext_resource type="Texture2D" uid="uid://b6y4pkigknnmd" path="res://Assets/Pics/dogLaugMeme.png" id="1_e8ydj"]
+[ext_resource type="Script" uid="uid://02s66erqll51" path="res://Scripts/button_play.gd" id="2_gky4b"]
+
+[node name="ButtonPlay" type="Button"]
+offset_right = 508.0
+offset_bottom = 266.0
+text = "PLAY"
+icon = ExtResource("1_e8ydj")
+icon_alignment = 1
+script = ExtResource("2_gky4b")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
